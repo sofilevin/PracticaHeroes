@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Formulario heroes</title>
+  </head>
+  <body>
+    <header>
+      <h6 class="texto-header">20% de descuento en todos los productos!</h6>
+      <section class="contenedor-logo-header">
+        <a href="home.html">
+          <img
+            src="img/Logo.png"
+            alt="Logo de la tienda"
+            width="75px"
+            height="50px"
+          />
+        </a>
+        <span class="nombre-tienda">Nombre Tienda</span>
+      </section>
+      <section class="contenedor-nav-header">
+        <nav class="nav-header">
+          <ul class="lista-nav-header">
+            <li>Contacto</li>
+            <li>Registrarme</li>
+            <li>Ingresar</li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <div class="contenedor-main">
+        <section class="formulario-compra">
+          <h1>Añadí tu super!</h1>
+          <h4>Agregá tu personaje favorito completando las opciones.</h4>
+          <form class="forms" action="index.html" method="post">
+            <section class="formulario-columnas">
+              <fieldset class="fieldset-forms">
+                <div class="formulario-columna1">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Gabriela"
+                    required
+                    oninvalid="this.setCustomValidity('Porfavor ingrese su nombre')"
+                  />
+                  <label for="fecha">Fecha</label>
+                  <input
+                    type="date"
+                    name="fecha"
+                    id="fecha"
+                    placeholder="02/01/1900"
+                  />
+                  <label for="descripción"></label>
+                  <textarea
+                    name="descripción"
+                    id="descripción"
+                    cols="30"
+                    rows="10"
+                  >
+ Si necesita, agregue su comentario aquí.</textarea
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="fieldset-forms">
+                <div class="formulario-columna2">
+                  <label for="especie">Especie</label>
+                  <select name="especie" id="especie">
+                    <option value="Unknown">Unknown</option>
+                    <option value="Especie1">Especie1</option>
+                    <option value="Especie2">Especie2</option>
+                    <option value="Especie3">Especie3</option>
+                  </select>
+                  <label for="foto">Agregar foto</label>
+                  <input type="file" accept=".jpg" />
+                  <div class="radio-inputs">
+                    <label for="poderes" class="checkbox-forms">Poderes</label>
+                    <label for="volar"
+                      ><input
+                        type="checkbox"
+                        name="volar"
+                        id="volar"
+                        value="volar"
+                        class="checkbox-poderes"
+                      />Volar</label
+                    >
+                    <label for="superinteligencia"
+                      ><input
+                        type="checkbox"
+                        name="superinteligencia"
+                        id="superinteligencia"
+                        value="superinteligencia"
+                        class="checkbox-poderes"
+                      />Superinteligencia</label
+                    >
+                    <label for="vista-de-rayo-laser">
+                      <input
+                        type="checkbox"
+                        name="vista-de-rayo-laser"
+                        id="vista-de-rayo-laser"
+                        value="vista-de-rayo-laser"
+                        class="checkbox-poderes"
+                      />Vista de rayo laser
+                    </label>
+                    <label for="billetera-gorda"
+                      ><input
+                        type="checkbox"
+                        name="billetera-gorda"
+                        id="billetera-gorda"
+                        value="billetera-gorda"
+                        class="checkbox-poderes"
+                      />Billetera gorda</label
+                    >
+                    <hr
+                      width="343px"
+                      size="1px"
+                      color="white"
+                      class="linea-divisora"
+                    />
+                    <label for="tipo-de-personaje" class="radio-forms"
+                      >Tipo de personaje</label
+                    >
+                    <label for="heroe-heroina"
+                      ><input
+                        type="radio"
+                        name="heroe-heroina"
+                        id="heroe-heroina"
+                        value="heroe/heroina"
+                        class="radio-personaje"
+                      />Heroe/heroina</label
+                    >
+                    <label for="villano-villana">
+                      <input
+                        type="radio"
+                        name="villano-villana"
+                        id="villano-villana"
+                        value="villano/villana"
+                        class="radio-personaje"
+                      />Villano/villana</label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+            </section>
+            <div class="boton-añadir">
+              <input type="submit" value="Añadir" />
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section class="contenedor-footer">
+        <h6 class="texto-footer">
+          Todos los derechos reservados a FRONT END 1
+        </h6>
+      </section>
+    </footer>
+  </body>
+</html>

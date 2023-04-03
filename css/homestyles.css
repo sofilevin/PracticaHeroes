@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: lighter;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+/*header*/
+
+.texto-header {
+  font-size: 17px;
+  background-color: #1cd1b0;
+}
+
+.contenedor-logo-header {
+  display: flex;
+  background-color: #00669f;
+}
+
+.nombre-tienda {
+  padding: 15px 5px;
+  color: white;
+}
+
+.contenedor-nav-header {
+  background-color: #001d2d;
+  color: white;
+  margin-bottom: 37px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+.lista-nav-header {
+  list-style: none;
+  display: flex;
+}
+
+.lista-nav-header li {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.lista-nav-header li:hover {
+  cursor: pointer;
+}
+
+/*main*/
+
+.contenedor-padre-personajes {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-batman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+  background-color: #f3f3f3;
+  max-width: 300px;
+  height: 529px;
+  background-image: url(../img/fondoBatman.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contenedor-batman,
+.contenedor-harley {
+  margin: 25px;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.3);
+}
+
+.foto-icono {
+  position: relative;
+  border-radius: 50%;
+  top: 130px;
+}
+
+h2 {
+  position: relative;
+  top: 148px;
+  font-size: 30px;
+  color: black;
+}
+
+.contenedor-batman p {
+  margin: 10px;
+  font-size: 16px;
+  position: relative;
+  top: 150px;
+}
+
+.boton-ver-mas {
+  color: white;
+  width: 128px;
+  height: 48px;
+  text-align: center;
+  padding: 13px;
+  background-color: #00669f;
+  font-size: 16px;
+  position: relative;
+  top: 170px;
+}
+
+.boton-ver-mas:hover {
+  cursor: pointer;
+}
+
+.contenedor-harley {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+  background-color: #f3f3f3;
+  max-width: 300px;
+  height: 529px;
+  background-image: url(../img/fondoHarley.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contenedor-harley p {
+  margin: 10px;
+  font-size: 16px;
+  position: relative;
+  top: 150px;
+}
+
+.boton-mas {
+  position: absolute;
+  right: 30px;
+  bottom: 27%;
+}
+
+/*footer*/
+
+.contenedor-footer {
+  background-color: #00669f;
+  margin-top: 100px;
+}
+
+.texto-footer {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px;
+}
